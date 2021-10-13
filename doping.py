@@ -69,7 +69,7 @@ def make_divisors(n):
       divisors.append(i)
       if i!=n//i:
         divisors.append(n//i)
-  # divisors.sort()
+  divisors.sort()
   return divisors
 
 #・グラフの受け取り 隣接リスト表現

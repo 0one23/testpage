@@ -715,3 +715,20 @@ def clip(x,h,w):
 #・グリッドの座標(1index)→通し番号(0index)
 def convert(x,y): 
     return w*(y-1)+x-1
+
+#ナップサック
+n,w=map(int,input().split())
+wl=[]
+vl=[]
+for i in range(n):
+  x,y=map(int,input().split())
+  wl.append(x)
+  vl.append(y)
+dp=[[0]*(w+1) for j in range(n+1)]
+for i in range(n):
+  for j in range(w+1):
+    if j<wl[i]:
+      dp[i+1][j]=dp[i][j]
+    else:
+      dp[i+1][j]=max(dp[i][j],dp[i][j-wl[i]]+vl[i])
+print(dp[n][w])

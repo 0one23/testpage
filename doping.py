@@ -732,3 +732,20 @@ for i in range(n):
     else:
       dp[i+1][j]=max(dp[i][j],dp[i][j-wl[i]]+vl[i])
 print(dp[n][w])
+
+
+#木をかっこ列に変換
+flg=[0]*n
+ka=[[] for i in range(n)]
+for i in range(n):
+  if len(ki[i])==1:
+    ka[i]='()'
+    flg[i]=1
+def ahu(n):
+  if flg[n]:
+    return ka[n]  
+  for i in ki[n]:
+    ka[n].append(ahu(i))
+  flg[n]=1
+  ka[n].sort()
+  return ''.join(ka[n])

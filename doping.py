@@ -749,3 +749,12 @@ def ahu(n):
   flg[n]=1
   ka[n].sort()
   return ''.join(ka[n])
+
+#点と直線の距離
+import numpy
+#1,2が直線、3が点
+def dist(x1,y1,x2,y2,x3,y3):
+  u=numpy.array([x2-x1,y2-y1])
+  v=numpy.array([x3-x1,y3-y1])
+  L=abs(numpy.cross(u,v)/numpy.linalg.norm(u))
+  return L

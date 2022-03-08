@@ -758,3 +758,14 @@ def dist(x1,y1,x2,y2,x3,y3):
   v=numpy.array([x3-x1,y3-y1])
   L=abs(numpy.cross(u,v)/numpy.linalg.norm(u))
   return L
+
+
+#英小文字→非負整数に変換（a=0）
+l=[]
+for i in range(len(s)):
+  l.append(ord(s[i])-97)
+print(l)
+#復元
+t=''
+for i in l:
+  t+=chr(i+97)

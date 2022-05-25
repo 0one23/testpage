@@ -1,0 +1,101 @@
+@charset "UTF-8";
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+#name {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 5%;
+    padding-right: 10%;
+    border: double;
+    background: #faf0e6;
+}
+#status {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding-left: 5%;
+    padding-right: 15%;
+    border: double;
+    background: #faf0e6;
+}
+
+#button-container {
+    position: absolute;
+    top: 70%;
+    width: 50%;
+    height: 10%;
+    margin-left: 10%;
+}
+#background {
+    width: auto;
+    height: 100%;
+    background-image: url(../png/room.png);
+    background-size: 100% 100%;
+}
+#dressup {
+    margin-left: 5%;
+    font-size: 130%;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background: rgb(135,206,250);
+}
+#dressup:hover {
+    background-color: rgb(70,130,180);
+}
+#battle {
+    position: relative;
+    font-size: 130%;
+    margin-right: 5%;
+    width: 40%;
+    height: 100%;
+}
+#avatar {
+    position:absolute;
+    top: 35%;
+    margin-left: 60%;
+}
+.button {
+    display       : inline-block;
+    font-size     : 18pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 12px 12px;   /* 余白       */
+    background    : #ffff1a;     /* 背景色     */
+    color         : #000000;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    opacity       : 0.9;         /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 3px 3px 3px #666666;  /* 影の設定 */
+}
+.button:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    opacity       : 1;           /* カーソル時透明度 */
+}
+#add_question {
+    position: relative;
+    background-color: rgb(211,211,211);
+    width: 20%;
+    padding: 1%;
+    border: double;
+    left: 60%;
+    top: 5%;
+}
+#form_explanation {
+    margin: 0;
+    font-size: 16px;
+}

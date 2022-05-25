@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#back {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.stage {
+    position: absolute;
+    width: 25%;
+    height: 10%;
+    font-size: 130%;
+}
+#mental {
+    top: 20%;
+    left: 10%;
+    background: rgb(255,153,51);
+}
+#mental:hover {
+    background-color: rgb(145, 97, 3);
+}
+#food {
+    top: 30%;
+    left: 50%;
+    background: rgb(135,206,235);
+}
+#food:hover {
+    background-color: rgb(100,149,237);
+}
+#disease {
+    top: 60%;
+    left: 20%;
+    background: rgb(60,179,113);
+}
+#disease:hover {
+    background-color: rgb(46,139,87);
+}
+#activity {
+    top: 70%;
+    left: 60%;
+    background: rgb(255,255,0);
+}
+#activity:hover {
+    background-color: rgb(255,215,0);
+}
+#background {
+    width: auto;
+    height: 100%;
+    background-image: url(../png/select_stage.png);
+    background-size: 100% 100%;
+}
+
+.button {
+    display       : inline-block;
+    font-size     : 18pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 12px 12px;   /* 余白       */
+    line-height   : 1em;         /* 1行の高さ  */
+    opacity       : 1;         /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 3px 3px 3px #666666;  /* 影の設定 */
+}
+.button:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    opacity       : 1;           /* カーソル時透明度 */
+}

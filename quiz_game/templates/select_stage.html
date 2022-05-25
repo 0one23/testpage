@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>battle</title>
+    <link rel="stylesheet" href="{% static 'css/select_stage.css' %}">
+</head>
+<body>
+    <div id="background">
+        <button id="back" onclick="location.href='home'">戻る</button>
+        <a class="stage button" id="mental">休養・心の健康の問題</a>
+        <a class="stage button" id="food" >栄養・食生活の問題</a>
+        <a href="{% url 'battle_disease' %}" class="stage button" id="disease">病気の問題</a>
+        <a class="stage button" id="activity">身体活動・運動の問題</a>
+    </div>
+</body>

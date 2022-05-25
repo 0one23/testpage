@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>battle</title>
+    <link rel="stylesheet" href="{% static 'css/battle_disease.css' %}">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        {% autoescape off %}
+        let question_list = {{ question_list }};
+        {% endautoescape %}
+        console.log(question_list);
+    </script>
+    <!-- phina.js を読み込む -->
+    <script src='http://cdn.rawgit.com/phi-jp/phina.js/v0.2.0/build/phina.js'></script>
+    <script type="text/javascript" src="{% static 'js/battle_enemies.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/battle.js' %}"></script>
+</body>
